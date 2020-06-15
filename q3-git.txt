@@ -9,3 +9,5 @@ master: <---------------- m1 <- m2 <- m3
 2. Draw resulting graph for `git rebase topic` while on master
 
 3. When is rebase useful?
+
+#Answer Below -------------------------------------------------------------------------------------------

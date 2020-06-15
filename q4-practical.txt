@@ -1,15 +1,16 @@
-1. Head here: https://jsfiddle.net/etorbiak/17nwdc0k/2/
+1. Head here: https://jsfiddle.net/etorbiak/17nwdc0k/7/
 2. Fork jsfiddle
 3. Make changes, save work and paste the url back into this file
 
 
 # Requirements
-Style and add basic actions to a todo list.
+Style and add basic actions to a todo list. 
+Todo's have a 'type' that is selected via the dropdown that determines their styling.
 
-There's no rules for styling, but make it look nice to yourself. 
+There's no rules for styling other than todo type should affect the style (ex. 'work' todos are orange, 'home' todos are blue), so make it look nice to yourself. 
 Actions to implement:
 1. Add task
 2. Edit task
 3. Delete task
 
-#Answer Below -------------------------------------------------------------------------------------------
+#Link Below -------------------------------------------------------------------------------------------

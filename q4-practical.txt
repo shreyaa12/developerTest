@@ -1,0 +1,15 @@
+1. Head here: https://jsfiddle.net/etorbiak/17nwdc0k/2/
+2. Fork jsfiddle
+3. Make changes, save work and paste the url back into this file
+
+
+# Requirements
+Style and add basic actions to a todo list.
+
+There's no rules for styling, but make it look nice to yourself. 
+Actions to implement:
+1. Add task
+2. Edit task
+3. Delete task
+
+#Answer Below -------------------------------------------------------------------------------------------

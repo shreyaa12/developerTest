@@ -1,0 +1,50 @@
+We have a Mongoose model called stars.
+
+"use strict";
+
+var mongoose = require("mongoose"),
+    Schema = mongoose.Schema;
+
+var Stars = new Schema({
+    // Entity is a unique id we use to track progress by each individual user
+    entity: {type: Schema.Types.ObjectId, ref: "Entity"},
+    game:  {type: Schema.Types.ObjectId, ref: "Game"},
+    // Each mapping can have various levels of difficulty called progression_level
+    progression_level: Number,
+    stars_earned: Number,
+    created_date: {type: Date, default: Date.now},
+    location: Schema.Types.Mixed,
+}, { collection: "Stars", versionKey: false });
+
+module.exports = Stars;
+
+
+
+Without getting bogged down in irrelevant data from the model above please provide a high level representation of what you believe the output of this query to be, as well as what the purpose may be for.
+
+return module.exports.aggregate([
+    {
+        $match: {
+        user_name: {$exists: true},
+        location: {$exists: true}
+        }
+    },{
+        $group: {
+        _id: {entity: "$entity"},
+        stars: {$sum: "$stars_earned"},
+        user_name: {$first: "$user_name"},
+        location: {$first: "$location"},
+        }
+    },{
+        $project: {
+        _id: 0,
+        stars: 1,
+        user_name: 1,
+        country: "$location.country"
+        }
+    },{
+        $sort: {stars: -1}
+    },{
+        $limit: limit || 20
+    }
+])

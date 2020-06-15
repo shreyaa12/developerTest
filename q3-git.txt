@@ -1,0 +1,11 @@
+Consider the below branches
+
+topic:    t1 <- t2 <- t3
+
+master: <---------------- m1 <- m2 <- m3 
+
+1. Draw resulting graph for `git merge master topic`
+
+2. Draw resulting graph for `git rebase topic` while on master
+
+3. When is rebase useful?

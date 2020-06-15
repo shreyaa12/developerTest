@@ -1,0 +1,13 @@
+We have a list of icons that are idential except for in colour that are used around the site multiple times (as well as on other sites) - so we want to use sass to generate the bulk of the css for each icon. The list is updated often so it's important that it is easy to add/change/remove items from the list without affecting any other files.
+
+Provide the sass to translate the following information into just a few lines code.
+
+CLASS    COLOUR
+----------------
+button-1 #ff65a9
+
+button-2 #8ec429
+
+button-3 #f46600
+
+button-4 #00ab8b

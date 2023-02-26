@@ -11,3 +11,29 @@ master: <---------------- m1 <- m2 <- m3
 3. When is rebase useful?
 
 #Answer Below -------------------------------------------------------------------------------------------
+
+1)
+
+           t1 - t2 - t3
+          /             \
+m1 -- m2 -- m3 --------- M
+In this graph, 'topic' branch is merged into 'master' branch with a new merge 'M' 
+with parent commits m3 and t3. Thus, the new merger contains commits from both the branch.
+
+
+2)
+                    t1' - t2' - t3'
+                   /
+m1 -- m2 -- m3 -- M
+
+In this graph, topic branch is rebased onto master branch, 
+there will be three new commits t1N, t2N, and t3N that show the changes from 
+topic branch onto master branch. The M commit still exists as the merge base of
+master and topic branches, but the changes from topic are now merged into 
+the master branch history.
+
+3) Rebase means Reapplying commits on top of another base tip. It is useful when we 
+have to merge one branch to other branch while maintaining the history sequenctially. It helps 
+to read the commit history and understand it, when there are multiple branches.
+As it changes the commit history the command should be used carefully.But,on the other side
+it keeps the branch upto date with the lastest and past changes.

@@ -50,3 +50,10 @@ return module.exports.aggregate([
 ])
 
 #Answer Below -------------------------------------------------------------------------------------------
+Aggregation is a way of processing a large number of documents in a collection by means of passing them through different stages. Here aggregation is performed on the data stored in the ‘Stars’ collection.
+
+The Output of the above query would be an array of objects where each object represents a group of stars earned 
+by each entity. Each object would contain three fields stars, user_name and location excluding the _id field. 
+The stars field contains the stars_earned for the group, the username would contain the username of the first 
+document in the group that has nonempty values, and the country field would contain the country value from the 
+location.country of the same document. The resulting array would be sorted in descending order and limited to a maximum record of 20.

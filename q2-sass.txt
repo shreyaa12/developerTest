@@ -13,3 +13,13 @@ button-3 #f46600
 button-4 #00ab8b
 
 #Answer Below -------------------------------------------------------------------------------------------
+@each $class, $color in (
+  button-1: #ff65a9,
+  button-2: #8ec429,
+  button-3: #f46600,
+  button-4: #00ab8b
+) {
+  .#{$class} {
+    background-color: $color;
+  }
+}

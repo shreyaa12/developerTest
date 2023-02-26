@@ -50,7 +50,7 @@ return module.exports.aggregate([
 ])
 
 #Answer Below -------------------------------------------------------------------------------------------
-Aggregation is a way of processing a large number of documents in a collection by means of passing them through 
+Aggregation is a way of processing a large number of documents in a collection by means of passing them through
 different stages. Here aggregation is performed on the data stored in the ‘Stars’ collection.
 
 The Output of the above query would be an array of objects where each object represents a group of stars earned 
